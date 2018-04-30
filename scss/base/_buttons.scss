@@ -172,6 +172,23 @@ input[type="submit"].btn:hover {
 
 
 
+/**
+* Botón navegación
+*/
+
+.btn--nav {
+    @extend %btn;
+	color: $color-secondary;
+	&:hover {
+		color: $color-secondary;
+	}
+	&:visited {
+		color: $color-secondary;
+	}
+}
+
+
+
 
 /*------------------------------------*\
     $BOTONES-TAMAÑOS

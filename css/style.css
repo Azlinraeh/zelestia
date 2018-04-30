@@ -434,7 +434,7 @@ input:required:focus:valid {
 /**
  * .btn es la clase principal para definir un botón
  */
-.btn--disabled, .btn--info, .btn--error, .btn--warning, .btn--success, .btn--primary {
+.btn--disabled, .btn--info, .btn--error, .btn--warning, .btn--success, .btn--primary, .btn--nav {
   display: inline-block;
   line-height: 3;
   color: color-grey(lightgrey);
@@ -463,12 +463,12 @@ input:required:focus:valid {
  	* Nadie quiere un botón con texto subrayado cuando
  	* hacemos hover.
  	*/ }
-  .btn--disabled:hover, .btn--info:hover, .btn--error:hover, .btn--warning:hover, .btn--success:hover, .btn--primary:hover {
+  .btn--disabled:hover, .btn--info:hover, .btn--error:hover, .btn--warning:hover, .btn--success:hover, .btn--primary:hover, .btn--nav:hover {
     text-decoration: none;
     color: color-grey(lightgrey); }
-  .btn--disabled:active, .btn--info:active, .btn--error:active, .btn--warning:active, .btn--success:active, .btn--primary:active, .btn--disabled:focus, .btn--info:focus, .btn--error:focus, .btn--warning:focus, .btn--success:focus, .btn--primary:focus {
+  .btn--disabled:active, .btn--info:active, .btn--error:active, .btn--warning:active, .btn--success:active, .btn--primary:active, .btn--nav:active, .btn--disabled:focus, .btn--info:focus, .btn--error:focus, .btn--warning:focus, .btn--success:focus, .btn--primary:focus, .btn--nav:focus {
     outline: none; }
-  .btn--disabled:visited, .btn--info:visited, .btn--error:visited, .btn--warning:visited, .btn--success:visited, .btn--primary:visited {
+  .btn--disabled:visited, .btn--info:visited, .btn--error:visited, .btn--warning:visited, .btn--success:visited, .btn--primary:visited, .btn--nav:visited {
     color: color-grey(lightgrey); }
 
 /*------------------------------------*    $BOTONES-VARIANTES
@@ -542,6 +542,16 @@ input[type="submit"].btn:hover {
     color: #369eac; }
   .btn--primary:visited {
     color: #369eac; }
+
+/**
+* Botón navegación
+*/
+.btn--nav {
+  color: #103a3d; }
+  .btn--nav:hover {
+    color: #103a3d; }
+  .btn--nav:visited {
+    color: #103a3d; }
 
 /*------------------------------------*    $BOTONES-TAMAÑOS
 \*------------------------------------*/
@@ -648,18 +658,27 @@ a {
 
 /*------------------------------------*    $TIPOGRAFÍA
 \*------------------------------------*/
-h1,
+h1 {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: Normal;
+  color: inherit;
+  text-rendering: optimizelegibility; }
+  h1.altheader {
+    color: #737373;
+    text-transform: uppercase;
+    display: block; }
+
 h2,
 h3,
 h4,
 h5,
 h6 {
   margin: 0;
-  font-family: Georgia, Times, "Times New Roman";
-  font-weight: normal;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100;
   color: inherit;
   text-rendering: optimizelegibility; }
-  h1.altheader,
   h2.altheader,
   h3.altheader,
   h4.altheader,
@@ -1062,7 +1081,112 @@ body {
 .position-absolute {
   position: fixed;
   right: 24px;
-  top: 24px; }
+  top: 24px;
+  padding-right: 0;
+  line-height: 0; }
+
+/* GRID */
+.twelve {
+  width: 100%; }
+
+.eleven {
+  width: 91.53%; }
+
+.ten {
+  width: 83.06%; }
+
+.nine {
+  width: 74.6%; }
+
+.eight {
+  width: 66.13%; }
+
+.seven {
+  width: 57.66%; }
+
+.six {
+  width: 49.2%; }
+
+.five {
+  width: 40.73%; }
+
+.four {
+  width: 32.26%; }
+
+.three {
+  width: 23.8%; }
+
+.two {
+  width: 15.33%; }
+
+.one {
+  width: 6.866%; }
+
+/* COLUMNS */
+.col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%; }
+
+.col:first-of-type {
+  margin-left: 0; }
+
+.container {
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center; }
+
+/* CLEARFIX */
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table; }
+
+.cf:after {
+  clear: both; }
+
+.cf {
+  *zoom: 1; }
+
+/* ALL */
+.row .three {
+  padding: 10px 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #ecf0f1;
+  text-align: center; }
+
+.hamburger .line {
+  width: 25px;
+  height: 5px;
+  background-color: #ecf0f1;
+  display: block;
+  margin: 3px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.hamburger:hover {
+  cursor: pointer; }
+
+/* ONE */
+#hamburger-1.is-active .line:nth-child(2) {
+  opacity: 0; }
+
+#hamburger-1.is-active .line:nth-child(1) {
+  -webkit-transform: translateY(3px) rotate(45deg);
+  -ms-transform: translateY(3px) rotate(45deg);
+  -o-transform: translateY(3px) rotate(45deg);
+  transform: translateY(3px) rotate(45deg); }
+
+#hamburger-1.is-active .line:nth-child(3) {
+  -webkit-transform: translateY(-13px) rotate(-45deg);
+  -ms-transform: translateY(-13px) rotate(-45deg);
+  -o-transform: translateY(-13px) rotate(-45deg);
+  transform: translateY(-13px) rotate(-45deg); }
 
 /**
 * Componets used for layouts, headers, articles, etc...
@@ -1260,10 +1384,10 @@ body {
   background-color: #369eac; }
 
 .color-secondary {
-  color: #dbd879; }
+  color: #103a3d; }
 
 .bg-color-secondary {
-  background-color: #dbd879; }
+  background-color: #103a3d; }
 
 .color-white {
   color: white; }
@@ -1335,7 +1459,7 @@ body {
   padding-right: 48px; }
 
 .max-width {
-  max-width: 576px; }
+  max-width: 864px; }
 
 /*------------------------------------*    $PLACEHOLDERS
 \*------------------------------------*/

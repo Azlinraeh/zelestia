@@ -159,9 +159,9 @@ $grid-size: 12;
 $basefont : "Helvetica Neue", Helvetica, Arial, sans-serif;
 $altfont : Georgia, Times, "Times New Roman";
 $codefont : "Courier New", monospace;
-$baseheadingfont : $altfont;
+$baseheadingfont : $basefont;
 
-$baseheadingfontweight : normal;
+$baseheadingfontweight : Normal;
 $baseheadingfontcolor : inherit;
 
 $basefontsize   :   16;
@@ -198,7 +198,7 @@ $size-vars: (
  * Brand colors
  */
     $color-brand:          rgb(54, 158, 172);
-    $color-secondary:      rgb(219,216,121);
+    $color-secondary:      rgb(16, 58, 61);
     
     /**
     * Grey Scale

@@ -10,7 +10,18 @@
 
 // HEADINGS ====================================================
 
-h1,
+h1 {
+	margin : 0;
+	font-family : $baseheadingfont;
+	font-weight : $baseheadingfontweight;
+	color : $baseheadingfontcolor;
+	text-rendering : optimizelegibility;
+		&.altheader {
+			color:$grey;
+			text-transform: uppercase;
+            display: block;
+		}
+}
 h2,
 h3,
 h4,
@@ -18,7 +29,7 @@ h5,
 h6 {
 	margin : 0;
 	font-family : $baseheadingfont;
-	font-weight : $baseheadingfontweight;
+	font-weight : 100;
 	color : $baseheadingfontcolor;
 	text-rendering : optimizelegibility;
 		&.altheader {
