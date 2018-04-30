@@ -17,6 +17,13 @@
   flex-wrap: wrap;
 
 }
+.grid-align-right {
+  margin-left: auto;
+}
+.grid-align-center {
+  margin-left: auto;;
+  margin-right: auto
+}
 
 [class^="item-"], [class*=" item-"] {
   background-color: pink;

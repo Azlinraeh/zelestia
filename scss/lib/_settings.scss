@@ -197,8 +197,9 @@ $size-vars: (
 /**
  * Brand colors
  */
-    $color-brand:          rgb(187, 34, 153);
+    $color-brand:          rgb(54, 158, 172);
     $color-secondary:      rgb(219,216,121);
+    
     /**
     * Grey Scale
     * This is mainly to hold back designers from adding 200 different greys ;)
@@ -227,7 +228,11 @@ $linkcolorfocus 	: $linkcolor;
 
 
 
-
+$brand-colors:(
+        "brand":$color-brand,
+        "secondary":$color-secondary,
+        "white":$white
+    );
 
 
 /*------------------------------------*\

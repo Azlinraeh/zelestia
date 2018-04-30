@@ -8,6 +8,51 @@
 * Selectors repeated constantly
 */
 
+
+
+
+
+/*
+ * Classes for font- sizes, you can check them in Settings.scss
+ * Same name of the variables with the `font-` prefix
+
+  .font-x-small {
+   font-size: .9rem;
+  }
+
+
+ */
+
+ @each $name, $value in $size-vars {
+    .font-#{$name} {
+   font-size: $value * 1rem;
+   line-height: 1.5;
+    }
+  }
+  
+  
+  
+  
+  /*
+   * Classes for Brand colors, you can check them in Settings.scss
+   * Same name of the variables with the `color-` prefix
+  
+    .color-brand
+      color: #8bc84c;
+    }
+  */
+  @each $color, $value in $brand-colors {
+    .color-#{$color} {
+   color: $value;
+    }
+    .bg-color-#{$color} {
+   background-color: $value;
+    }
+  }
+
+
+
+
 /*
  * Classes for font- sizes, you can check them in Settings.scss
  * Same name of the variables with the `font-` prefix
@@ -45,10 +90,43 @@
 .margin-bottom {
     margin-bottom: $padding;
 }
+.margin-left {
+    margin-left: $padding;
+}
+.margin-right {
+    margin-right: $padding;
+}
+
+
+
+// alineaciones
+.align-center {
+    text-align: center;
+}
 
 
 
 
+// Diferentes especificaciones para paddings
+.padding-top-xxl {
+    padding-top: $padding * 6;
+}
+.padding-bottom-xxl {
+    padding-bottom: $padding * 6;
+}
+.padding-left {
+    padding-left: $padding * 2;
+}
+.padding-right {
+    padding-right: $padding * 2;
+}
+
+
+
+
+.max-width {
+    max-width: $padding * 24;
+}
 
 /*------------------------------------*\
     $PLACEHOLDERS

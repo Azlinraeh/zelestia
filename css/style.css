@@ -403,7 +403,7 @@ textarea[readonly] {
 
 input:focus,
 textarea:focus {
-  border-color: #bb2299, 40%;
+  border-color: #369eac, 40%;
   -webkit-box-shadow: 0 0 1px 1px #bfbfbf;
   box-shadow: 0 0 1px 1px #bfbfbf;
   outline: none; }
@@ -537,11 +537,11 @@ input[type="submit"].btn:hover {
 * Botón principal
 */
 .btn--primary {
-  color: #bb2299; }
+  color: #369eac; }
   .btn--primary:hover {
-    color: #bb2299; }
+    color: #369eac; }
   .btn--primary:visited {
-    color: #bb2299; }
+    color: #369eac; }
 
 /*------------------------------------*    $BOTONES-TAMAÑOS
 \*------------------------------------*/
@@ -1049,13 +1049,20 @@ body {
 
 ::-moz-selection {
   background-color: white;
-  color: #bb2299;
+  color: #369eac;
   text-shadow: none; }
 
 ::selection {
   background-color: white;
-  color: #bb2299;
+  color: #369eac;
   text-shadow: none; }
+
+/*------------------------------------*    $NAVEGACIÓN
+\*------------------------------------*/
+.position-absolute {
+  position: fixed;
+  right: 24px;
+  top: 24px; }
 
 /**
 * Componets used for layouts, headers, articles, etc...
@@ -1075,6 +1082,13 @@ body {
   align-items: stretch;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
+
+.grid-align-right {
+  margin-left: auto; }
+
+.grid-align-center {
+  margin-left: auto;
+  margin-right: auto; }
 
 [class^="item-"], [class*=" item-"] {
   background-color: pink;
@@ -1205,6 +1219,62 @@ body {
  * Classes for font- sizes, you can check them in Settings.scss
  * Same name of the variables with the `font-` prefix
 
+  .font-x-small {
+   font-size: .9rem;
+  }
+
+
+ */
+.font-x-small {
+  font-size: 0.6rem;
+  line-height: 1.5; }
+
+.font-small {
+  font-size: 0.8rem;
+  line-height: 1.5; }
+
+.font-normal {
+  font-size: 1rem;
+  line-height: 1.5; }
+
+.font-big {
+  font-size: 1.5rem;
+  line-height: 1.5; }
+
+.font-huge {
+  font-size: 2rem;
+  line-height: 1.5; }
+
+/*
+   * Classes for Brand colors, you can check them in Settings.scss
+   * Same name of the variables with the `color-` prefix
+  
+    .color-brand
+      color: #8bc84c;
+    }
+  */
+.color-brand {
+  color: #369eac; }
+
+.bg-color-brand {
+  background-color: #369eac; }
+
+.color-secondary {
+  color: #dbd879; }
+
+.bg-color-secondary {
+  background-color: #dbd879; }
+
+.color-white {
+  color: white; }
+
+.bg-color-white {
+  background-color: white; }
+
+/*
+ * Classes for font- sizes, you can check them in Settings.scss
+ * Same name of the variables with the `font-` prefix
+
 		.font-x-small {
 			font-size: .9rem;
 		}
@@ -1242,6 +1312,30 @@ body {
 
 .margin-bottom {
   margin-bottom: 24px; }
+
+.margin-left {
+  margin-left: 24px; }
+
+.margin-right {
+  margin-right: 24px; }
+
+.align-center {
+  text-align: center; }
+
+.padding-top-xxl {
+  padding-top: 144px; }
+
+.padding-bottom-xxl {
+  padding-bottom: 144px; }
+
+.padding-left {
+  padding-left: 48px; }
+
+.padding-right {
+  padding-right: 48px; }
+
+.max-width {
+  max-width: 576px; }
 
 /*------------------------------------*    $PLACEHOLDERS
 \*------------------------------------*/
