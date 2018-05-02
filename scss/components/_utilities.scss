@@ -134,19 +134,26 @@
 
 
 
-.max-width-xl {
-    max-width: $padding * 36;
+.max-width {
+    @include max-width;
 }
-.align {
-    float: left;
-    width: 100%;
+
+
+.container {
+    width: 250px;
+    height: 250px;
+    @include directional;
 }
-.image {
-    width: 100%;
-    max-width: 500px;
-    min-width: 250px;
-    padding: $padding;
-}
+    .container--hawkeu {
+        @include directional (red, pink, 45deg);
+    }
+
+
+.valign-center {
+    display: flex;
+    align-items: center;
+  }
+
 
 
 /*------------------------------------*\

@@ -47,8 +47,17 @@ body {
 	color : $textcolor;
 }
 
+
 /**
 * A partir de aquí es donde debes escribir los estilos de posicionamiento
 * y detalles que forman tu web. Disfruta!
 */
 
+.header{
+	@include center-content(800px);
+	background-color: $color-brand;
+	padding-top: $padding * 6;
+	padding-bottom: $padding * 6;
+	color: white;
+	text-align: center;
+}
