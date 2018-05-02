@@ -1085,6 +1085,21 @@ body {
   padding-right: 0;
   line-height: 0; }
 
+.nav li {
+  list-style: none;
+  line-height: 2.1;
+  font-size: 1rem; }
+
+.nav li a:visited {
+  text-decoration: none;
+  color: #369eac; }
+
+.nav li a:hover {
+  text-decoration: none; }
+
+.nav ul {
+  padding: 0; }
+
 /* CLEARFIX */
 .cf:before,
 .cf:after {
@@ -1394,14 +1409,30 @@ body {
 .padding-bottom-xxl {
   padding-bottom: 144px; }
 
-.padding-left {
+.padding-left-medium {
   padding-left: 48px; }
 
-.padding-right {
+.padding-right-medium {
   padding-right: 48px; }
 
-.max-width {
+.padding {
+  padding: 38px; }
+
+.rounded {
+  border-radius: 6px; }
+
+.max-width-xl {
   max-width: 864px; }
+
+.align {
+  float: left;
+  width: 100%; }
+
+.image {
+  width: 100%;
+  max-width: 500px;
+  min-width: 250px;
+  padding: 24px; }
 
 /*------------------------------------*    $PLACEHOLDERS
 \*------------------------------------*/

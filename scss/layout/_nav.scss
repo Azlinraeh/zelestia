@@ -16,7 +16,23 @@
 
 }
 
+.nav li{
+    list-style: none;
+    line-height : 2.1;
+    font-size: fs(normal);
 
+    
+}
+.nav li a:visited {
+    text-decoration: none;
+    color: $color-brand;
+}
+.nav li a:hover{
+    text-decoration: none;
+}
+.nav ul{
+    padding: 0;
+}
 
 /* CLEARFIX */
 
