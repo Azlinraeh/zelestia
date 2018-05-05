@@ -142,12 +142,31 @@
 .container {
     width: 250px;
     height: 250px;
-    @include directional;
+    @include three-colors;
 }
     .container--hawkeu {
-        @include directional (red, pink, 45deg);
+        @include three-colors (#628D95, #628F95, 40%, #3A3E99, 135deg);
+    }
+    .container--findness {
+        @include three-colors (#956294, #956294, 40%, #3A5A99, 135deg);
     }
 
+.adop{
+    width: 150px;
+}
+.iconsvg {
+    /* Flow with text content */
+    display: inline-block;
+    /* Inherit the parent text color */
+    fill: currentColor;
+    height: 1em;
+    width: 1em;
+    vertical-align: middle;
+    position: relative;
+    top: -0.0725em;
+    overflow: hidden;
+    pointer-events: none;
+   }
 
 .valign-center {
     display: flex;

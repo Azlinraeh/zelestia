@@ -1,11 +1,13 @@
 @charset "UTF-8";
-/*------------------------------------*    $STYLE
+/*------------------------------------*\
+    $STYLE
 \*------------------------------------*/
 /**
  * Let's define the settings file here, or the partials to be included.
  * This way we can have different .css files compiled with different partials each.
  */
-/*------------------------------------*    $PARTIALS
+/*------------------------------------*\
+    $PARTIALS
 \*------------------------------------*/
 /**
  * All files to be compiled
@@ -13,20 +15,23 @@
 /**
 * Scss Libraries, mixins, functions and any Scss focused logic
 **/
-/*------------------------------------*    $SETTINGS
+/*------------------------------------*\
+    $SETTINGS
 \*------------------------------------*/
 /**
  *
  * Define all variables and values to use
  *
  */
-/*------------------------------------*    $INCLUDED-COMPONENTS
+/*------------------------------------*\
+    $INCLUDED-COMPONENTS
 \*------------------------------------*/
 /**
  * We can tell the components to use here, `true` for used, `false` unused.
  * Remember you can overwrite this value anywhere else by removing the `!default` property
  */
-/*------------------------------------*    $BREAKPOINTS
+/*------------------------------------*\
+    $BREAKPOINTS
 \*------------------------------------*/
 /**
  * "Start with the small screen first, then expand until it looks like shit. Time to insert a breakpoint!"
@@ -40,7 +45,8 @@
 }
  *
  */
-/*------------------------------------*    $Z-INDEX
+/*------------------------------------*\
+    $Z-INDEX
 \*------------------------------------*/
 /**
  * We can have control over z-index and not ending up having 900 to infinite.
@@ -50,7 +56,8 @@
  }
  *
  */
-/*------------------------------------*    $DIR
+/*------------------------------------*\
+    $DIR
 \*------------------------------------*/
 /**
  * Sometimes we change image dir from develop to production:
@@ -58,18 +65,21 @@
 /*
   * In case we use local fonts (I use them fewer and fewer lately)
   */
-/*------------------------------------*    $LAYOUT
+/*------------------------------------*\
+    $LAYOUT
 \*------------------------------------*/
 /**
  * Constant layout values, apart from these we can also declare values
  * for different blocks sizes and more.
  */
-/*------------------------------------*    $GRID
+/*------------------------------------*\
+    $GRID
 \*------------------------------------*/
 /**
  * These are the variables we use for our Grid
  */
-/*------------------------------------*    $FONT-FACE
+/*------------------------------------*\
+    $FONT-FACE
 \*------------------------------------*/
 /**
  * Fonts definitions
@@ -87,7 +97,8 @@
 
  *
  */
-/*------------------------------------*    $COLORS
+/*------------------------------------*\
+    $COLORS
 \*------------------------------------*/
 /**
  * Brand colors
@@ -96,12 +107,14 @@
     * Grey Scale
     * This is mainly to hold back designers from adding 200 different greys ;)
     */
-/*------------------------------------*    $TEXTURAS
+/*------------------------------------*\
+    $TEXTURAS
 \*------------------------------------*/
 /**
  * Definimos Colores y elementos de popups, mensajes de alerta, etc...
  */
-/*------------------------------------*    $MIXINS
+/*------------------------------------*\
+    $MIXINS
 \*------------------------------------*/
 /*
 * Fácil de usar: las variables a usar están en settings.scss y son:
@@ -122,7 +135,8 @@
 /**
   * Centrar y dar un ancho máximo igual a $pagemaxwidth.
   */
-/*------------------------------------*    $FUNCIONES
+/*------------------------------------*\
+    $FUNCIONES
 \*------------------------------------*/
 /*
  * Función para controlar el index
@@ -145,7 +159,8 @@
 /**
 * Base
 **/
-/*------------------------------------*    $CONTENIDO
+/*------------------------------------*\
+    $CONTENIDO
 \*------------------------------------*/
 /**
  * Contenido..................... Esto que lees
@@ -184,7 +199,8 @@
 
  * Patron........................ Estilos para la guía de patrones
  */
-/*------------------------------------*    $RESET
+/*------------------------------------*\
+    $RESET
 \*------------------------------------*/
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, main, menu, nav, section, time, mark, audio, video {
   margin: 0;
@@ -225,7 +241,8 @@ img {
 /**
 * HTML elements
 **/
-/*------------------------------------*    $ELEMENTOS-FIGURE
+/*------------------------------------*\
+    $ELEMENTOS-FIGURE
 \*------------------------------------*/
 figure {
   margin-bottom: 1.5; }
@@ -238,7 +255,8 @@ figure {
     font-style: italic;
     color: #737373; }
 
-/*------------------------------------*    $FORMULARIOS
+/*------------------------------------*\
+    $FORMULARIOS
 \*------------------------------------*/
 form {
   margin: 0 0 1.5 0; }
@@ -344,7 +362,6 @@ input[type="radio"] {
     background-color: #bfbfbf;
     border-color: white;
     border-width: 1px;
-    -webkit-box-shadow: 0 0 0 1px #bfbfbf;
     box-shadow: 0 0 0 1px #bfbfbf; }
   input[type="checkbox"] + label,
   input[type="radio"] + label {
@@ -404,7 +421,6 @@ textarea[readonly] {
 input:focus,
 textarea:focus {
   border-color: #369eac, 40%;
-  -webkit-box-shadow: 0 0 1px 1px #bfbfbf;
   box-shadow: 0 0 1px 1px #bfbfbf;
   outline: none; }
 
@@ -426,7 +442,8 @@ input:required:focus:valid {
   background-color: #e9f5e9;
   border: 1px solid #5bb75b; }
 
-/*------------------------------------*    $BOTONES
+/*------------------------------------*\
+    $BOTONES
 \*------------------------------------*/
 /*
  * Definimos los botones y sus variantes
@@ -471,7 +488,8 @@ input:required:focus:valid {
   .btn--disabled:visited, .btn--info:visited, .btn--error:visited, .btn--warning:visited, .btn--success:visited, .btn--primary:visited, .btn--nav:visited {
     color: color-grey(lightgrey); }
 
-/*------------------------------------*    $BOTONES-VARIANTES
+/*------------------------------------*\
+    $BOTONES-VARIANTES
 \*------------------------------------*/
 /**
  * Variantes de los botones: color para dar sensaciones.
@@ -553,7 +571,8 @@ input[type="submit"].btn:hover {
   .btn--nav:visited {
     color: #103a3d; }
 
-/*------------------------------------*    $BOTONES-TAMAÑOS
+/*------------------------------------*\
+    $BOTONES-TAMAÑOS
 \*------------------------------------*/
 /**
  * Variantes de los botones por tamaño.
@@ -577,7 +596,8 @@ input[type="submit"].btn:hover {
   line-height: 3;
   font-size: 1.5rem; }
 
-/*------------------------------------*    $BOTONES-GRUPOS
+/*------------------------------------*\
+    $BOTONES-GRUPOS
 \*------------------------------------*/
 /**
  * Con esta clase podemos agrupar los botones
@@ -625,7 +645,8 @@ input[type="submit"].btn:hover {
       -moz-background-clip: padding;
       background-clip: padding-box; }
 
-/*------------------------------------*    $IMÁGENES
+/*------------------------------------*\
+    $IMÁGENES
 \*------------------------------------*/
 .img--rounded {
   border-radius: 12px; }
@@ -634,13 +655,13 @@ input[type="submit"].btn:hover {
   padding: 12px;
   background-color: white;
   border: 1px solid color-grey(lightgrey);
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); }
 
 .img--circle {
   border-radius: 100%; }
 
-/*------------------------------------*    $LINKS
+/*------------------------------------*\
+    $LINKS
 \*------------------------------------*/
 a {
   text-decoration: none;
@@ -656,7 +677,8 @@ a {
   a:hover, a:active {
     outline: 0; }
 
-/*------------------------------------*    $TIPOGRAFÍA
+/*------------------------------------*\
+    $TIPOGRAFÍA
 \*------------------------------------*/
 h1 {
   margin: 0;
@@ -868,7 +890,8 @@ hr {
 .font-huge {
   font-size: 2rem; }
 
-/*------------------------------------*    $TABLAS
+/*------------------------------------*\
+    $TABLAS
 \*------------------------------------*/
 table {
   width: 100%;
@@ -931,7 +954,8 @@ table {
 /**
 * Layout and general styles
 **/
-/*------------------------------------*    $SITIO
+/*------------------------------------*\
+    $SITIO
 \*------------------------------------*/
 @-webkit-viewport {
   width: device-width; }
@@ -979,7 +1003,8 @@ body {
   color: white;
   text-align: center; }
 
-/*------------------------------------*    $TEXTURAS
+/*------------------------------------*\
+    $TEXTURAS
 \*------------------------------------*/
 .alert--success, .alert--warning, .alert--error, .alert--info, .alert--block {
   margin-bottom: 1.5;
@@ -1086,7 +1111,8 @@ body {
   color: #369eac;
   text-shadow: none; }
 
-/*------------------------------------*    $NAVEGACIÓN
+/*------------------------------------*\
+    $NAVEGACIÓN
 \*------------------------------------*/
 .position-absolute {
   position: fixed;
@@ -1158,210 +1184,144 @@ body {
 /**
 * Componets used for layouts, headers, articles, etc...
 **/
-/*------------------------------------*    $grid
+/*------------------------------------*\
+    $grid
 \*------------------------------------*/
 * {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 .grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
   align-items: stretch;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
 .grid--leftalign {
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
   justify-content: flex-start; }
 
 .grid--rightalign {
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
   justify-content: flex-end; }
   .grid--rightalign [class^="grid--item-"], .grid--rightalign [class*=" grid--item-"] {
     margin-right: 0;
     margin-left: 6px; }
 
 .grid--direction-column {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column; }
 
 .grid--spacearound {
-  -ms-flex-pack: distribute;
   justify-content: space-around; }
   .grid--spacearound [class^="grid--item-"], .grid--spacearound [class*=" grid--item-"] {
     margin-right: 0; }
 
 .grid--spacebetween {
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between; }
 
 .grid--justify-center {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center; }
 
 .grid--stretch {
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
   align-items: stretch; }
 
 .grid--align-vertical {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center; }
 
 .grid--aligntop {
-  -webkit-box-align: start;
-  -ms-flex-align: start;
   align-items: flex-start; }
 
 .grid--aligncenter {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center; }
 
 .grid---nowrap {
-  -ms-flex-wrap: nowrap;
   flex-wrap: nowrap; }
 
 .grid-align-right {
   margin-left: auto; }
 
 .grid-align-center {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: auto; }
 
 [class^="item-"], [class*=" item-"] {
   background-color: pink;
-  -ms-flex-negative: 0;
   flex-shrink: 0;
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
   flex-grow: 1;
   margin: 6px;
   padding: 5px;
   min-height: 100px; }
 
 .item-1 {
-  -ms-flex-preferred-size: 100%;
   flex-basis: 100%; }
   @media (min-width: 56.25em) {
     .item-1 {
-      -webkit-box-flex: 0;
-      -ms-flex: 0 0 calc(8.33333% - 12px);
       flex: 0 0 calc(8.33333% - 12px); } }
 
 .item-2 {
-  -ms-flex-preferred-size: 100%;
   flex-basis: 100%; }
   @media (min-width: 56.25em) {
     .item-2 {
-      -webkit-box-flex: 0;
-      -ms-flex: 0 0 calc(16.66667% - 12px);
       flex: 0 0 calc(16.66667% - 12px); } }
 
 .item-3 {
-  -ms-flex-preferred-size: 100%;
   flex-basis: 100%; }
   @media (min-width: 56.25em) {
     .item-3 {
-      -webkit-box-flex: 0;
-      -ms-flex: 0 0 calc(25% - 12px);
       flex: 0 0 calc(25% - 12px); } }
 
 .item-4 {
-  -ms-flex-preferred-size: 100%;
   flex-basis: 100%; }
   @media (min-width: 56.25em) {
     .item-4 {
-      -webkit-box-flex: 0;
-      -ms-flex: 0 0 calc(33.33333% - 12px);
       flex: 0 0 calc(33.33333% - 12px); } }
 
 .item-5 {
-  -ms-flex-preferred-size: 100%;
   flex-basis: 100%; }
   @media (min-width: 56.25em) {
     .item-5 {
-      -webkit-box-flex: 0;
-      -ms-flex: 0 0 calc(41.66667% - 12px);
       flex: 0 0 calc(41.66667% - 12px); } }
 
 .item-6 {
-  -ms-flex-preferred-size: 100%;
   flex-basis: 100%; }
   @media (min-width: 56.25em) {
     .item-6 {
-      -webkit-box-flex: 0;
-      -ms-flex: 0 0 calc(50% - 12px);
       flex: 0 0 calc(50% - 12px); } }
 
 .item-7 {
-  -ms-flex-preferred-size: 100%;
   flex-basis: 100%; }
   @media (min-width: 56.25em) {
     .item-7 {
-      -webkit-box-flex: 0;
-      -ms-flex: 0 0 calc(58.33333% - 12px);
       flex: 0 0 calc(58.33333% - 12px); } }
 
 .item-8 {
-  -ms-flex-preferred-size: 100%;
   flex-basis: 100%; }
   @media (min-width: 56.25em) {
     .item-8 {
-      -webkit-box-flex: 0;
-      -ms-flex: 0 0 calc(66.66667% - 12px);
       flex: 0 0 calc(66.66667% - 12px); } }
 
 .item-9 {
-  -ms-flex-preferred-size: 100%;
   flex-basis: 100%; }
   @media (min-width: 56.25em) {
     .item-9 {
-      -webkit-box-flex: 0;
-      -ms-flex: 0 0 calc(75% - 12px);
       flex: 0 0 calc(75% - 12px); } }
 
 .item-10 {
-  -ms-flex-preferred-size: 100%;
   flex-basis: 100%; }
   @media (min-width: 56.25em) {
     .item-10 {
-      -webkit-box-flex: 0;
-      -ms-flex: 0 0 calc(83.33333% - 12px);
       flex: 0 0 calc(83.33333% - 12px); } }
 
 .item-11 {
-  -ms-flex-preferred-size: 100%;
   flex-basis: 100%; }
   @media (min-width: 56.25em) {
     .item-11 {
-      -webkit-box-flex: 0;
-      -ms-flex: 0 0 calc(91.66667% - 12px);
       flex: 0 0 calc(91.66667% - 12px); } }
 
 .item-12 {
-  -ms-flex-preferred-size: 100%;
   flex-basis: 100%; }
   @media (min-width: 56.25em) {
     .item-12 {
-      -webkit-box-flex: 0;
-      -ms-flex: 0 0 calc(100% - 12px);
       flex: 0 0 calc(100% - 12px); } }
 
-/*------------------------------------*    $UTILITIES
+/*------------------------------------*\
+    $UTILITIES
 \*------------------------------------*/
 /*
 *
@@ -1501,32 +1461,54 @@ body {
 .container {
   width: 250px;
   height: 250px;
-  background-color: #e6e6e6;
-  background-image: -moz-linear-gradient(45deg, white, #e6e6e6);
-  background-image: -ms-linear-gradient(45deg, white, #e6e6e6);
-  background-image: -webkit-linear-gradient(45deg, white, #e6e6e6);
-  background-image: -o-linear-gradient(45deg, white, #e6e6e6);
-  background-image: linear-gradient(45deg, white, #e6e6e6);
-  background-repeat: repeat-x; }
+  background-color: #57cdf5;
+  background-image: -moz-linear-gradient(135deg, #00b3ee, #1d80a1 33%, #57cdf5);
+  background-image: -ms-linear-gradient(135deg, #00b3ee, #1d80a1 33%, #57cdf5);
+  background-image: -webkit-linear-gradient(135deg, #00b3ee, #1d80a1 33%, #57cdf5);
+  background-image: -o-linear-gradient(135deg, #00b3ee, #1d80a1 33%, #57cdf5);
+  background-image: linear-gradient(135deg, #00b3ee, #1d80a1 33%, #57cdf5);
+  background-repeat: no-repeat; }
 
 .container--hawkeu {
-  background-color: pink;
-  background-image: -moz-linear-gradient(45deg, red, pink);
-  background-image: -ms-linear-gradient(45deg, red, pink);
-  background-image: -webkit-linear-gradient(45deg, red, pink);
-  background-image: -o-linear-gradient(45deg, red, pink);
-  background-image: linear-gradient(45deg, red, pink);
-  background-repeat: repeat-x; }
+  background-color: #3A3E99;
+  background-image: -moz-linear-gradient(135deg, #628D95, #628F95 40%, #3A3E99);
+  background-image: -ms-linear-gradient(135deg, #628D95, #628F95 40%, #3A3E99);
+  background-image: -webkit-linear-gradient(135deg, #628D95, #628F95 40%, #3A3E99);
+  background-image: -o-linear-gradient(135deg, #628D95, #628F95 40%, #3A3E99);
+  background-image: linear-gradient(135deg, #628D95, #628F95 40%, #3A3E99);
+  background-repeat: no-repeat; }
+
+.container--findness {
+  background-color: #3A5A99;
+  background-image: -moz-linear-gradient(135deg, #956294, #956294 40%, #3A5A99);
+  background-image: -ms-linear-gradient(135deg, #956294, #956294 40%, #3A5A99);
+  background-image: -webkit-linear-gradient(135deg, #956294, #956294 40%, #3A5A99);
+  background-image: -o-linear-gradient(135deg, #956294, #956294 40%, #3A5A99);
+  background-image: linear-gradient(135deg, #956294, #956294 40%, #3A5A99);
+  background-repeat: no-repeat; }
+
+.adop {
+  width: 150px; }
+
+.iconsvg {
+  /* Flow with text content */
+  display: inline-block;
+  /* Inherit the parent text color */
+  fill: currentColor;
+  height: 1em;
+  width: 1em;
+  vertical-align: middle;
+  position: relative;
+  top: -0.0725em;
+  overflow: hidden;
+  pointer-events: none; }
 
 .valign-center {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center; }
 
-/*------------------------------------*    $PLACEHOLDERS
+/*------------------------------------*\
+    $PLACEHOLDERS
 \*------------------------------------*/
 /**
   * The ghost, nudged to maintain perfect centering
