@@ -150,10 +150,25 @@
     .container--findness {
         @include three-colors (#956294, #956294, 40%, #3A5A99, 135deg);
     }
+    .container--mum {
+        @include three-colors (#E94E77, #C96681, 40%, #75273C, 135deg);
+    }
+    .container--hitngo {
+        @include three-colors (#F38630, #CF712F, 40%, #7A4318, 135deg);
+    }
+    .container--camp {
+        @include three-colors (#8ECE7F, #64B951, 40%, #226213, 135deg);
+    }
 
 .adop{
     width: 150px;
 }
+    .adop--mum {
+        width: 120px;
+    }
+    .adop--camp {
+        width: 170px;
+    }
 .iconsvg {
     /* Flow with text content */
     display: inline-block;
