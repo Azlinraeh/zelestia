@@ -19,22 +19,19 @@
 .nav li{
     list-style: none;
     line-height : 2.1;
-    font-size: fs(normal);
-    color: white;
-
-    
+    font-size: fs(hulk);
+    color: $white;
+    text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 .nav li a:visited {
     text-decoration: none;
-    color: white;
+    color: $white;
 }
 .nav li a:hover{
     text-decoration: none;
-    color: white;
 }
 .nav ul{
     padding: 0;
-    color: white;
 }
 
 /* CLEARFIX */

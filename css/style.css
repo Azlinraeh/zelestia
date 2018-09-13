@@ -1,11 +1,13 @@
 @charset "UTF-8";
-/*------------------------------------*    $STYLE
+/*------------------------------------*\
+    $STYLE
 \*------------------------------------*/
 /**
  * Let's define the settings file here, or the partials to be included.
  * This way we can have different .css files compiled with different partials each.
  */
-/*------------------------------------*    $PARTIALS
+/*------------------------------------*\
+    $PARTIALS
 \*------------------------------------*/
 /**
  * All files to be compiled
@@ -13,20 +15,23 @@
 /**
 * Scss Libraries, mixins, functions and any Scss focused logic
 **/
-/*------------------------------------*    $SETTINGS
+/*------------------------------------*\
+    $SETTINGS
 \*------------------------------------*/
 /**
  *
  * Define all variables and values to use
  *
  */
-/*------------------------------------*    $INCLUDED-COMPONENTS
+/*------------------------------------*\
+    $INCLUDED-COMPONENTS
 \*------------------------------------*/
 /**
  * We can tell the components to use here, `true` for used, `false` unused.
  * Remember you can overwrite this value anywhere else by removing the `!default` property
  */
-/*------------------------------------*    $BREAKPOINTS
+/*------------------------------------*\
+    $BREAKPOINTS
 \*------------------------------------*/
 /**
  * "Start with the small screen first, then expand until it looks like shit. Time to insert a breakpoint!"
@@ -40,7 +45,8 @@
 }
  *
  */
-/*------------------------------------*    $Z-INDEX
+/*------------------------------------*\
+    $Z-INDEX
 \*------------------------------------*/
 /**
  * We can have control over z-index and not ending up having 900 to infinite.
@@ -50,7 +56,8 @@
  }
  *
  */
-/*------------------------------------*    $DIR
+/*------------------------------------*\
+    $DIR
 \*------------------------------------*/
 /**
  * Sometimes we change image dir from develop to production:
@@ -58,18 +65,21 @@
 /*
   * In case we use local fonts (I use them fewer and fewer lately)
   */
-/*------------------------------------*    $LAYOUT
+/*------------------------------------*\
+    $LAYOUT
 \*------------------------------------*/
 /**
  * Constant layout values, apart from these we can also declare values
  * for different blocks sizes and more.
  */
-/*------------------------------------*    $GRID
+/*------------------------------------*\
+    $GRID
 \*------------------------------------*/
 /**
  * These are the variables we use for our Grid
  */
-/*------------------------------------*    $FONT-FACE
+/*------------------------------------*\
+    $FONT-FACE
 \*------------------------------------*/
 /**
  * Fonts definitions
@@ -87,7 +97,8 @@
 
  *
  */
-/*------------------------------------*    $COLORS
+/*------------------------------------*\
+    $COLORS
 \*------------------------------------*/
 /**
  * Brand colors
@@ -96,12 +107,14 @@
     * Grey Scale
     * This is mainly to hold back designers from adding 200 different greys ;)
     */
-/*------------------------------------*    $TEXTURAS
+/*------------------------------------*\
+    $TEXTURAS
 \*------------------------------------*/
 /**
  * Definimos Colores y elementos de popups, mensajes de alerta, etc...
  */
-/*------------------------------------*    $MIXINS
+/*------------------------------------*\
+    $MIXINS
 \*------------------------------------*/
 /*
 * Fácil de usar: las variables a usar están en settings.scss y son:
@@ -122,7 +135,8 @@
 /**
   * Centrar y dar un ancho máximo igual a $pagemaxwidth.
   */
-/*------------------------------------*    $FUNCIONES
+/*------------------------------------*\
+    $FUNCIONES
 \*------------------------------------*/
 /*
  * Función para controlar el index
@@ -145,7 +159,8 @@
 /**
 * Base
 **/
-/*------------------------------------*    $CONTENIDO
+/*------------------------------------*\
+    $CONTENIDO
 \*------------------------------------*/
 /**
  * Contenido..................... Esto que lees
@@ -184,7 +199,8 @@
 
  * Patron........................ Estilos para la guía de patrones
  */
-/*------------------------------------*    $RESET
+/*------------------------------------*\
+    $RESET
 \*------------------------------------*/
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, main, menu, nav, section, time, mark, audio, video {
   margin: 0;
@@ -228,7 +244,8 @@ img {
 /**
 * HTML elements
 **/
-/*------------------------------------*    $ELEMENTOS-FIGURE
+/*------------------------------------*\
+    $ELEMENTOS-FIGURE
 \*------------------------------------*/
 figure {
   margin-bottom: 1.5;
@@ -246,7 +263,8 @@ figure figcaption {
   color: #737373;
 }
 
-/*------------------------------------*    $FORMULARIOS
+/*------------------------------------*\
+    $FORMULARIOS
 \*------------------------------------*/
 form {
   margin: 0 0 1.5 0;
@@ -474,7 +492,8 @@ input:required:focus:valid {
   border: 1px solid #5bb75b;
 }
 
-/*------------------------------------*    $BOTONES
+/*------------------------------------*\
+    $BOTONES
 \*------------------------------------*/
 /*
  * Definimos los botones y sus variantes
@@ -523,7 +542,8 @@ input:required:focus:valid {
   color: color-grey(lightgrey);
 }
 
-/*------------------------------------*    $BOTONES-VARIANTES
+/*------------------------------------*\
+    $BOTONES-VARIANTES
 \*------------------------------------*/
 /**
  * Variantes de los botones: color para dar sensaciones.
@@ -637,7 +657,8 @@ input[type="submit"].btn:hover {
   color: #103a3d;
 }
 
-/*------------------------------------*    $BOTONES-TAMAÑOS
+/*------------------------------------*\
+    $BOTONES-TAMAÑOS
 \*------------------------------------*/
 /**
  * Variantes de los botones por tamaño.
@@ -664,7 +685,8 @@ input[type="submit"].btn:hover {
   font-size: 1.5rem;
 }
 
-/*------------------------------------*    $BOTONES-GRUPOS
+/*------------------------------------*\
+    $BOTONES-GRUPOS
 \*------------------------------------*/
 /**
  * Con esta clase podemos agrupar los botones
@@ -715,7 +737,8 @@ input[type="submit"].btn:hover {
   background-clip: padding-box;
 }
 
-/*------------------------------------*    $IMÁGENES
+/*------------------------------------*\
+    $IMÁGENES
 \*------------------------------------*/
 .img--rounded {
   border-radius: 12px;
@@ -733,7 +756,8 @@ input[type="submit"].btn:hover {
   border-radius: 100%;
 }
 
-/*------------------------------------*    $LINKS
+/*------------------------------------*\
+    $LINKS
 \*------------------------------------*/
 a {
   text-decoration: none;
@@ -758,7 +782,8 @@ a:hover, a:active {
   outline: 0;
 }
 
-/*------------------------------------*    $TIPOGRAFÍA
+/*------------------------------------*\
+    $TIPOGRAFÍA
 \*------------------------------------*/
 h1 {
   margin: 0;
@@ -1014,7 +1039,12 @@ hr {
   font-size: 2rem;
 }
 
-/*------------------------------------*    $TABLAS
+.font-hulk {
+  font-size: 3rem;
+}
+
+/*------------------------------------*\
+    $TABLAS
 \*------------------------------------*/
 table {
   width: 100%;
@@ -1096,7 +1126,8 @@ table tbody tr:hover th {
 /**
 * Layout and general styles
 **/
-/*------------------------------------*    $SITIO
+/*------------------------------------*\
+    $SITIO
 \*------------------------------------*/
 @-webkit-viewport {
   width: device-width;
@@ -1152,7 +1183,8 @@ body {
   text-align: center;
 }
 
-/*------------------------------------*    $TEXTURAS
+/*------------------------------------*\
+    $TEXTURAS
 \*------------------------------------*/
 .alert--success, .alert--warning, .alert--error, .alert--info, .alert--block {
   margin-bottom: 1.5;
@@ -1282,7 +1314,8 @@ body {
   text-shadow: none;
 }
 
-/*------------------------------------*    $NAVEGACIÓN
+/*------------------------------------*\
+    $NAVEGACIÓN
 \*------------------------------------*/
 .position-absolute {
   position: fixed;
@@ -1295,12 +1328,14 @@ body {
 .nav li {
   list-style: none;
   line-height: 2.1;
-  font-size: 1rem;
+  font-size: 3rem;
+  color: white;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .nav li a:visited {
   text-decoration: none;
-  color: #369eac;
+  color: white;
 }
 
 .nav li a:hover {
@@ -1363,7 +1398,8 @@ body {
 /**
 * Componets used for layouts, headers, articles, etc...
 **/
-/*------------------------------------*    $grid
+/*------------------------------------*\
+    $grid
 \*------------------------------------*/
 * {
   -webkit-box-sizing: border-box;
@@ -1634,7 +1670,8 @@ body {
   }
 }
 
-/*------------------------------------*    $UTILITIES
+/*------------------------------------*\
+    $UTILITIES
 \*------------------------------------*/
 /*
 *
@@ -1672,6 +1709,11 @@ body {
 
 .font-huge {
   font-size: 2rem;
+  line-height: 1.5;
+}
+
+.font-hulk {
+  font-size: 3rem;
   line-height: 1.5;
 }
 
@@ -1742,6 +1784,11 @@ body {
   line-height: 1.5;
 }
 
+.font-hulk {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
 .float-right {
   float: right;
 }
@@ -1768,6 +1815,10 @@ body {
 
 .align-center {
   text-align: center;
+}
+
+.align-right {
+  text-align: right;
 }
 
 .padding-top-xxl {
@@ -1921,7 +1972,8 @@ body {
           align-items: center;
 }
 
-/*------------------------------------*    $PLACEHOLDERS
+/*------------------------------------*\
+    $PLACEHOLDERS
 \*------------------------------------*/
 /**
   * The ghost, nudged to maintain perfect centering
