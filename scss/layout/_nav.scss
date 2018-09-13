@@ -20,18 +20,21 @@
     list-style: none;
     line-height : 2.1;
     font-size: fs(normal);
+    color: white;
 
     
 }
 .nav li a:visited {
     text-decoration: none;
-    color: $color-brand;
+    color: white;
 }
 .nav li a:hover{
     text-decoration: none;
+    color: white;
 }
 .nav ul{
     padding: 0;
+    color: white;
 }
 
 /* CLEARFIX */
